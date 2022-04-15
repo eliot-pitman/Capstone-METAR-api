@@ -1,0 +1,25 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTAxNDAzOTd9.eEAXaXtZrAtGO_rejci4e5Ik4DDn0DlPmp_rPakG9TY
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "test",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password",
+  "username": "test",
+  "home_airport": "KPLK",
+  "avitar": "image_url"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
+
+
