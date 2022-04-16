@@ -1,14 +1,14 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTAxNDAzOTd9.eEAXaXtZrAtGO_rejci4e5Ik4DDn0DlPmp_rPakG9TY
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDIsImV4cCI6MTY1MDE4NzQ1MX0.Vc0cWUUs0-9MBrYUCe6tXnUin2ooYjE3YuQBLliqdPQ
 
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "test",
-  "email": "test@test.com",
+  "name": "eliot",
+  "email": "eliot@test.com",
   "password": "password",
   "password_confirmation": "password",
-  "username": "test",
+  "username": "eliotpitman",
   "home_airport": "KPLK",
   "avitar": "image_url"
 }
@@ -18,7 +18,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "eliot@test.com",
   "password": "password"
 }
 
@@ -31,5 +31,14 @@ Content-Type: application/json
   "icao":"ksgf",
   "name":"springfield airport",
   "location":"springfield, mo"
+}
+
+### favorites create
+POST http://localhost:3000/favorites
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "iata":"bbg"
 }
 
