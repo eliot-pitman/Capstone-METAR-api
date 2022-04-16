@@ -47,4 +47,4 @@ group :development do
 end
 gem 'rename'
 gem 'jwt'
-
+gem 'ffaker'

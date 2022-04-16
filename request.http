@@ -22,4 +22,14 @@ Content-Type: application/json
   "password": "password"
 }
 
+### airports create 
+POST http://localhost:3000/airports
+Content-Type: application/json
+
+{
+  "iata":"sgf",
+  "icao":"ksgf",
+  "name":"springfield airport",
+  "location":"springfield, mo"
+}
 
