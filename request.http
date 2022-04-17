@@ -70,3 +70,8 @@ GET http://localhost:3000/users
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
+
+### get weather
+GET https://private-47724b-avwx.apiary-mock.com/api/metar/KJFK
+Authorization: Bearer key
+Content-Type: application/json
