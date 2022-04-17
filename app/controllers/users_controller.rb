@@ -29,8 +29,14 @@ class UsersController < ApplicationController
   def update
     user = User.find(current_user.id)
 
-    user.name = params[:name] || user.name
-    user.email = params[:email] || user.email
+
+    
+
+    user.name = params["name"] || user.name
+    user.email = params["email"] || user.email
+    user.username = params["username"] || user.username
+    user.home_airport = params["home_airport"] || user.home_airport
+    user.avitar = params["avitar"] || user.avitar
   
 
     if user.save

@@ -51,10 +51,11 @@ DELETE http://localhost:3000/users/1
 Authorization: Bearer {{jwt}}
 
 ### user update not working
-PATCH http://localhost:3000/users/102
+PATCH http://localhost:3000/users
 Authorization: Bearer {{jwt}}
+Content-Type: application/json
 
 {
-  "username":"eliotpitman"
+  "home_airport":"lax"
 }
 
