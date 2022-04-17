@@ -64,3 +64,9 @@ GET http://localhost:3000/favorites
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
+
+### user show
+GET http://localhost:3000/users
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
