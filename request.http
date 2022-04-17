@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDIsImV4cCI6MTY1MDI2MTMxMH0.VdYvVpeESof8B2JW4sKxdlOck86DR4LnUcBez8pvOOo
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDIsImV4cCI6MTY1MDI2ODIwM30.5UCBfDX47u4n0ZuTRcF25WRWRoaKXWKwM1HpIa4Lu8U
 
 POST http://localhost:3000/users
 Content-Type: application/json
@@ -41,3 +41,20 @@ Authorization: Bearer {{jwt}}
 {
   "iata":"lax"
 }
+
+### favorites delete
+DELETE http://localhost:3000/favorites/152
+Authorization: Bearer {{jwt}}
+
+### user delete
+DELETE http://localhost:3000/users/1
+Authorization: Bearer {{jwt}}
+
+### user update not working
+PATCH http://localhost:3000/users/102
+Authorization: Bearer {{jwt}}
+
+{
+  "username":"eliotpitman"
+}
+

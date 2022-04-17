@@ -1,5 +1,6 @@
 class FavoritesController < ApplicationController
   require 'http'
+  before_action :authenticate_user
   def create
 
     response = HTTP.headers("X-RapidAPI-Key" => ".gitignore").get("https://airport-info.p.rapidapi.com/airport?iata=#{params[:iata]}")
@@ -22,5 +23,14 @@ class FavoritesController < ApplicationController
     end
   end
 
+  def destroy
+    favorite = Favorite.find(params[:id])
+    if favorite.destroy
+      render json: {message: "successfully removed"}
+    else 
+      render error: {error: "not removed"}
+    end
+  end
   
+
 end

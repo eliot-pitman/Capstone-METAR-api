@@ -8,6 +8,12 @@ Rails.application.routes.draw do
   post "/airports" => "airports#create"
   post "/favorites" => "favorites#create"
 
+  delete "/users/:id" => "users#destroy"
+  delete "/favorites/:id" => "favorites#destroy"
+
+  patch "/users/:id" => "users#update"
+  
+
   
 
 end
