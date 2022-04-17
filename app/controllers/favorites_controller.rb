@@ -1,6 +1,9 @@
 class FavoritesController < ApplicationController
+  
   require 'http'
   before_action :authenticate_user
+  
+  
   def create
 
     response = HTTP.headers("X-RapidAPI-Key" => ".gitignore").get("https://airport-info.p.rapidapi.com/airport?iata=#{params[:iata]}")
@@ -32,5 +35,10 @@ class FavoritesController < ApplicationController
     end
   end
   
+  def index
+    user = User.find(current_user.id)
+    favorites = user.favorites
+    render json: favorites.as_json
+  end
 
 end

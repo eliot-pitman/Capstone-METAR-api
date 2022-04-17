@@ -59,3 +59,8 @@ Content-Type: application/json
   "home_airport":"lax"
 }
 
+### favorites index
+GET http://localhost:3000/favorites
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+

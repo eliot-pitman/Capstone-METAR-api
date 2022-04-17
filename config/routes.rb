@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
  
-  
+  get "favorites" => "favorites#index"
+
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
   post "/airports" => "airports#create"
