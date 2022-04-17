@@ -48,3 +48,7 @@ end
 gem 'rename'
 gem 'jwt'
 gem 'ffaker'
+gem 'http'
+gem 'uri'
+gem 'openssl'
+gem 'net'

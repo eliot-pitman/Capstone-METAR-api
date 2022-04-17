@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
   post "/airports" => "airports#create"
   post "/favorites" => "favorites#create"
+
   
 
 end
