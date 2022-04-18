@@ -72,6 +72,5 @@ Content-Type: application/json
 
 
 ### get weather
-GET https://private-47724b-avwx.apiary-mock.com/api/metar/KJFK
-Authorization: Bearer key
+GET https://avwx.rest/api/metar/KJFK?token=lOeb42_xPJibT35Pn9HvjCNI1GWcpsUNW9n0h4gQgw8
 Content-Type: application/json
