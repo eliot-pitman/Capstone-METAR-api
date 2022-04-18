@@ -31,3 +31,5 @@
 
 #Rails.application.credentials.system.access_key_id
 
+.ignore
+
