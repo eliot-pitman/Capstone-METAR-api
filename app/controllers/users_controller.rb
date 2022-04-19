@@ -50,6 +50,29 @@ class UsersController < ApplicationController
     user = User.find(current_user.id)
     render json: user.as_json
   end
+
+  def show_weather
+    user = User.find(current_user.id)
+
+    favorites = user.favorites
+
+    favorites_weather = []
+
+    favorites.each do |n|
+
+      favorite = n['airport_iata']
+
+      response = HTTP.get("https://avwx.rest/api/metar/#{favorite}?token=lOeb42_xPJibT35Pn9HvjCNI1GWcpsUNW9n0h4gQgw8")
+
+      favorites_weather << response
+    
+    end
+     
+     
+    render json: favorites_weather.as_json
+
+
+  end
 end
 
 

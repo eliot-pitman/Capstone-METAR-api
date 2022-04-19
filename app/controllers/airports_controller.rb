@@ -1,5 +1,5 @@
 class AirportsController < ApplicationController
-  before_action ::authenticate_user
+  before_action :authenticate_user
   require 'http'
   # def create
   #   airport = Airport.new(
@@ -22,4 +22,5 @@ class AirportsController < ApplicationController
   #   resposne = HTTP.get()
     
   # end
+ 
 end

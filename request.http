@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDIsImV4cCI6MTY1MDI2ODIwM30.5UCBfDX47u4n0ZuTRcF25WRWRoaKXWKwM1HpIa4Lu8U
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDIsImV4cCI6MTY1MDQ1ODA3NH0.RRi6vnX39jqB8GDD-C_yM33lKpBInOFB76fM9Ruc9Fo
 
 POST http://localhost:3000/users
 Content-Type: application/json
@@ -50,7 +50,7 @@ Authorization: Bearer {{jwt}}
 DELETE http://localhost:3000/users/1
 Authorization: Bearer {{jwt}}
 
-### user update not working
+### user update
 PATCH http://localhost:3000/users
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
