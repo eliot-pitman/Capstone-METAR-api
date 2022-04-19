@@ -1,6 +1,7 @@
 class AirportsController < ApplicationController
   before_action :authenticate_user
   require 'http'
+  require 'json'
   # def create
   #   airport = Airport.new(
   #     iata: params[:iata],
@@ -21,6 +22,24 @@ class AirportsController < ApplicationController
   #   user.favorites
   #   resposne = HTTP.get()
     
+  # end
+
+  # def show
+  #   user = User.find(current_user.id)
+  #   favorites = user.favorites
+  #   favorites_weather = []
+  #   favorites.each do |n|
+
+  #     favorite = n['airport_iata']
+
+  #     response = HTTP.get("https://avwx.rest/api/metar/#{favorite}?token=token")
+
+  #     favorites_weather << response.as_json
+    
+  #   end
+    
+  #   render json: favorites_weather.as_json
+
   # end
  
 end
