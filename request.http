@@ -1,15 +1,15 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDIsImV4cCI6MTY1MDYwODc3Mn0.Vp4shQ0fBhLlJzvVDoMpsL12hrO_OcYIsXhbXOKDQrw
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDgsImV4cCI6MTY1MDY1MDYxMn0.R9siGqvwwGZ8AiBpdgGAzbhLJJBo3xBuhERJY_sy5Ro
 
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "eliot",
-  "email": "eliot@test.com",
+  "name": "amanda",
+  "email": "amanda@test.com",
   "password": "password",
   "password_confirmation": "password",
-  "username": "eliotpitman",
-  "home_airport": "KPLK",
+  "username": "amanda",
+  "home_airport": "ORD",
   "avitar": "image_url"
 }
 
@@ -18,20 +18,20 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "eliot@test.com",
+  "email": "amanda@test.com",
   "password": "password"
 }
 
 ### airports create 
-POST http://localhost:3000/airports
-Content-Type: application/json
+# POST http://localhost:3000/airports
+# Content-Type: application/json
 
-{
-  "iata":"sgf",
-  "icao":"ksgf",
-  "name":"springfield airport",
-  "location":"springfield, mo"
-}
+# {
+#   "iata":"sgf",
+#   "icao":"ksgf",
+#   "name":"springfield airport",
+#   "location":"springfield, mo"
+# }
 
 ### favorites create
 POST http://localhost:3000/favorites
@@ -39,11 +39,11 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "iata":"bbg"
+  "iata":"msy"
 }
 
 ### favorites delete
-DELETE http://localhost:3000/favorites/152
+DELETE http://localhost:3000/favorites/182
 Authorization: Bearer {{jwt}}
 
 ### user delete
@@ -72,5 +72,5 @@ Content-Type: application/json
 
 
 ### get weather
-GET https://avwx.rest/api/metar/KJFK?token=lOeb42_xPJibT35Pn9HvjCNI1GWcpsUNW9n0h4gQgw8
+GET https://avwx.rest/api/metar/KJFK?token=_IX6kr0_tT4wusRSOyIkJDqIyx7TUqI3099F7E9h70w	
 Content-Type: application/json
