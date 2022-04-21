@@ -6,7 +6,7 @@ class FavoritesController < ApplicationController
   
   def create
 
-    response = HTTP.headers("X-RapidAPI-Key" => "792f500195msh0fdff13168def47p1fe899jsnf7fbaaa7cebd").get("https://airport-info.p.rapidapi.com/airport?iata=#{params[:iata]}")
+    response = HTTP.headers("X-RapidAPI-Key" => Rails.application.credentials.system.access_key_id).get("https://airport-info.p.rapidapi.com/airport?iata=#{params[:iata]}")
 
     response = response.parse(:json)
 

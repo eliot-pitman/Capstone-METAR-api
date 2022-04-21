@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDIsImV4cCI6MTY1MDQ1ODA3NH0.RRi6vnX39jqB8GDD-C_yM33lKpBInOFB76fM9Ruc9Fo
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDIsImV4cCI6MTY1MDYwODc3Mn0.Vp4shQ0fBhLlJzvVDoMpsL12hrO_OcYIsXhbXOKDQrw
 
 POST http://localhost:3000/users
 Content-Type: application/json
@@ -39,7 +39,7 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "iata":"lax"
+  "iata":"bbg"
 }
 
 ### favorites delete
@@ -56,7 +56,7 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "home_airport":"lax"
+  "home_airport":"bbg"
 }
 
 ### favorites index
