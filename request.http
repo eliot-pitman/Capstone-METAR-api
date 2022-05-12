@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDgsImV4cCI6MTY1MDY1MDYxMn0.R9siGqvwwGZ8AiBpdgGAzbhLJJBo3xBuhERJY_sy5Ro
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDIsImV4cCI6MTY1MTQ2NzUwNn0.8rsYbd0FqpPVIbEGCXAIr8GMOka3nkGLocfA9LeBKrI
 
 POST http://localhost:3000/users
 Content-Type: application/json
@@ -18,7 +18,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "amanda@test.com",
+  "email": "eliot@test.com",
   "password": "password"
 }
 
@@ -43,7 +43,7 @@ Authorization: Bearer {{jwt}}
 }
 
 ### favorites delete
-DELETE http://localhost:3000/favorites/182
+DELETE http://localhost:3000/favorites/192
 Authorization: Bearer {{jwt}}
 
 ### user delete
