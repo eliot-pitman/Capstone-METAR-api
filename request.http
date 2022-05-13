@@ -74,3 +74,29 @@ Content-Type: application/json
 ### get weather
 GET https://avwx.rest/api/metar/KJFK?token=_IX6kr0_tT4wusRSOyIkJDqIyx7TUqI3099F7E9h70w	
 Content-Type: application/json
+
+###
+POST https://evening-ocean-44027.herokuapp.com/sessions
+Content-Type: application/json
+
+{
+  "email": "joan@mailinator.com",
+  "password": "password"
+}
+
+
+###
+POST http://evening-ocean-44027.herokuapp.com/users
+Content-Type: application/json
+
+
+{
+  "name": "amanda",
+  "email": "amanda@test.com",
+  "password": "password",
+  "password_confirmation": "password",
+  "username": "amanda",
+  "home_airport": "KORD"
+}
+
+
